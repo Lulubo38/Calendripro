@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendripro</title>
+    <style>
+      /* Ajout d'un fond bleu foncé */
+      body {
+        background-color: #0d47a1;
+        color: #fff;
+      }
+      
+      /* Centrer les boutons de téléchargement */
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+      
+      /* Style pour les onglets */
+      .tab {
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+
+      .tab button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        margin: 0 10px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        color: #fff;
+      }
+
+      .tab button:hover {
+        background-color: #fff;
+        color: #0d47a1;
+      }
+
+      .tab button.active {
+        background-color: #ccc;
+      }
+      
+      /* Ajout d'une image centrée à droite */
+      .image {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Titre de la page -->
+    <h1 style="text-align: center;">Calendripro</h1>
+
+    <!-- Boutons de téléchargement -->
+    <div class="center">
+      <button style="background-color: #fff; color: #0d47a1;">Download iOS</button>
+      <button style="background-color: #fff; color: #0d47a1;">Download Android</button>
+    </div>
+
+    <!-- Onglets -->
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Contact')">Nous contacter</button>
+      <button class="tablinks" onclick="openTab(event, 'Info')">Info</button>
+    </div>
+
+    <!-- Contenu des onglets -->
+    <div id="Contact" class="tabcontent">
+      <h3>Nous contacter</h3>
+      <p>Vous pouvez nous contacter à l'adresse suivante : contact@calendripro.com</p>
+    </div>
+
+    <div id="Info" class="tabcontent">
+      <h3>Info</h3>
+      <p>Calendripro est une application de gestion de calendrier pour les professionnels.</p>
+    </div>
+    
+    <!-- Image à droite -->
+    <img src="./projet map.PNG">
